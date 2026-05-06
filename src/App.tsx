@@ -1,6 +1,7 @@
 import "./App.css";
 
 import { useState } from "react";
+import styled from "styled-components";
 
 import heroImg from "./assets/hero.png";
 import reactLogo from "./assets/react.svg";
@@ -12,17 +13,17 @@ function App() {
   return (
     <>
       <section id="center">
-        <div className="hero">
+        <StyledDIV className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
+        </StyledDIV>
+        <StyledDIV>
           <h1>Get started</h1>
           <p>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
-        </div>
+        </StyledDIV>
         <button
           type="button"
           className="counter"
@@ -120,5 +121,10 @@ function App() {
     </>
   );
 }
+
+const StyledDIV = styled.div`
+  color: Fuchsia;
+  font-weight: bold;
+`;
 
 export default App;
