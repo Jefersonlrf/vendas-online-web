@@ -1,10 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-
 export const GlobalStyle = createGlobalStyle`
   body{
     margin: 0px;
-  }`
+  }`;
 
 export const ContainerLoginScreen = styled.div`
   width: 100%;
@@ -21,9 +20,7 @@ export const BackgroundImage = styled.img`
   z-index: -1;
 `;
 
-export const LogoImage = styled.img`
-  
-`;
+export const LogoImage = styled.img``;
 
 export const ContainerLogin = styled.div`
   display: flex;
@@ -41,4 +38,5 @@ export const LimitedContainer = styled.div`
   max-width: 498px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 `;
