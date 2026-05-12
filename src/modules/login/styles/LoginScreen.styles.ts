@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0px;
   }`;
 
-const { Title } = Typography
+const { Title } = Typography;
 
 export const ContainerLoginScreen = styled.div`
   width: 100%;
